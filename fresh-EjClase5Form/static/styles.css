@@ -1,0 +1,78 @@
+h1 {
+  text-align: center;
+  color: #fabada;
+}
+
+.characterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 20px;
+  margin: 10px;
+  h1 {
+    color: #fabada;
+    text-align: center;
+  }
+  img {
+    border-radius: 25%;
+    height: 150px;
+    border: 1px solid #004f73;
+    box-shadow: 0px 2px 4px #004f73;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.characterCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #fabada;
+  width: 150px;
+  margin: 10px;
+  padding: 20px;
+  gap: 2px;
+}
+
+.characterCard h3 {
+  font-size: 1rem;
+  color: #004f73;
+  height: 50px; /* altura fija para alinear todos los nombres */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.characterImage img {
+  width: 100%;
+  border-radius: 50px;
+  transition: transform 0.3s ease;
+}
+
+.characterCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.characterCard:hover .imageWrapper img {
+  transform: scale(1.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fabada;
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
